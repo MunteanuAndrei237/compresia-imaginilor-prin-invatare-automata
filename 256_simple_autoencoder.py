@@ -1,9 +1,10 @@
 import tensorflow as tf
 import tensorflow_datasets as tfds
 import matplotlib.pyplot as plt
+import matplotlib
 import sys
 
-plt.use('Agg')
+matplotlib.use('Agg')
 sys.stdout = open("result.txt", "w")
 dataset, info = tfds.load("tf_flowers", with_info=True, as_supervised=True)
 
